@@ -7,4 +7,8 @@ nav_order: 4
 description: Curriculum vitae (PDF).
 ---
 
-The CV will be posted here.
+<p><a class="btn btn-primary" href="{{ '/assets/pdf/Ho-Jun_Lee_CV.pdf' | relative_url }}" target="_blank" rel="noopener">Download CV (PDF)</a></p>
+
+<object data="{{ '/assets/pdf/Ho-Jun_Lee_CV.pdf' | relative_url }}" type="application/pdf" width="100%" height="1100px">
+  <p>Your browser cannot display the PDF here. Please use the download button above.</p>
+</object>
