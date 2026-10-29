@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our team won Second Prize in the Entrepreneurship Award at the Silicon Valley Innovation & Entrepreneurship Program, San Jose State University.
+Participated in the Silicon Valley Innovation & Entrepreneurship Program at San Jose State University, where our team won Second Prize in the Entrepreneurship Award.
