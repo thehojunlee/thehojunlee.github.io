@@ -4,4 +4,4 @@
   Pass zoom="no" for logos, which gain nothing from enlarging.
 {% endcomment %}
 {%- assign thumb = include.src | replace: '.jpg', '_thumb.jpg' -%}
-<img src="{{ thumb | relative_url }}" {% unless include.zoom == "no" %}data-zoom-src="{{ include.src | relative_url }}" data-zoomable {% endunless %}alt="{{ include.alt }}" loading="lazy" style="float: right; height: 72px; width: auto; margin: 0 0 0.25rem 0.75rem; border: 1px solid var(--global-divider-color); border-radius: 4px;">
+<img src="{{ thumb | relative_url }}" {% unless include.zoom == "no" %}data-zoom-src="{{ include.src | relative_url }}" data-zoomable {% endunless %}alt="{{ include.alt }}" title="{{ include.alt }}" loading="lazy" style="float: right; height: 72px; width: auto; margin: 0 0 0.25rem 0.75rem; border: 1px solid var(--global-divider-color); border-radius: 4px;">
