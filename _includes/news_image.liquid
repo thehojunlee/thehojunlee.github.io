@@ -1,6 +1,7 @@
 {% comment %}
-  Small certificate or poster thumbnail on the right of a news item; click to enlarge.
+  Small certificate, logo or figure thumbnail on the right of a news item; click to enlarge.
   Usage: {% include news_image.liquid src="assets/img/news/NAME.jpg" alt="..." %} (NAME_thumb.jpg must exist next to it)
+  Pass zoom="no" for logos, which gain nothing from enlarging.
 {% endcomment %}
 {%- assign thumb = include.src | replace: '.jpg', '_thumb.jpg' -%}
-<img src="{{ thumb | relative_url }}" data-zoom-src="{{ include.src | relative_url }}" alt="{{ include.alt }}" loading="lazy" data-zoomable style="float: right; height: 72px; width: auto; margin: 0 0 0.25rem 0.75rem; border: 1px solid var(--global-divider-color); border-radius: 4px;">
+<img src="{{ thumb | relative_url }}" {% unless include.zoom == "no" %}data-zoom-src="{{ include.src | relative_url }}" data-zoomable {% endunless %}alt="{{ include.alt }}" loading="lazy" style="float: right; height: 72px; width: auto; margin: 0 0 0.25rem 0.75rem; border: 1px solid var(--global-divider-color); border-radius: 4px;">
