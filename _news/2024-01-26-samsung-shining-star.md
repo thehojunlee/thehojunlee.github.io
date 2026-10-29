@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Completed the Samsung Shining Star 2024 program at Samsung Electronics.
+{% include news_image.liquid src="assets/img/news/2024-01-26-samsung-shining-star.jpg" alt="Samsung Shining Star certificate" %}Completed the Samsung Shining Star 2024 program at Samsung Electronics.
